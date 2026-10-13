@@ -1,0 +1,12 @@
+{
+  "name": "oss-catalog",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Data-driven open-source project catalog (Hugo).",
+  "scripts": {
+    "build-search": "pagefind --site public"
+  },
+  "devDependencies": {
+    "pagefind": "^1.4.0"
+  }
+}

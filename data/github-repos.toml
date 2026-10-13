@@ -1,0 +1,989 @@
+[[repos]]
+repo = "NikitaBoyarkin/rfm-analysis-of-bank-clients"
+name = "rfm-analysis-of-bank-clients"
+description = "Segment bank clients by transaction behavior using Recency, Frequency, Monetary scoring"
+website = "https://nikitaboyarkin.github.io/Personal_Projects.github.io/projects/rfm/"
+stars = 11
+forks = 1
+latest_release = ""
+releases = 0
+first_commit = "2025-04-20T12:58:02+00:00"
+last_updated = "2026-10-12T17:17:27+00:00"
+license = "MIT"
+language = "Jupyter Notebook"
+topics = [
+    "rfm",
+    "rfm-analysis",
+    "rfm-segmentation",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/python"
+name = "python"
+description = "Python analytics playground: data loading, cleaning, EDA, visualization (tested ≥80%)"
+website = ""
+stars = 6
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2025-09-13T23:56:24+00:00"
+last_updated = "2026-10-12T22:21:11+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "analysis",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/NikitaBoyarkin"
+name = "NikitaBoyarkin"
+description = ""
+website = ""
+stars = 5
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2025-04-01T15:15:45+00:00"
+last_updated = "2026-10-13T11:51:44+00:00"
+license = "MIT"
+language = "Python"
+topics = []
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/NikitaBoyarkin.github.io"
+name = "NikitaBoyarkin.github.io"
+description = "Product Analyst Portfolio"
+website = "https://nikitaboyarkin.github.io/"
+stars = 5
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2020-09-03T14:09:24+00:00"
+last_updated = "2026-10-13T12:13:12+00:00"
+license = "NOASSERTION"
+language = "HTML"
+topics = [
+    "data-analysis",
+    "data-science",
+    "portfolio",
+    "product-analytics",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/tableau_cohort_analysis"
+name = "tableau_cohort_analysis"
+description = "Когортный анализ удержания и LTV"
+website = "https://nikitaboyarkin.github.io/Personal_Projects.github.io/projects/cohort/"
+stars = 5
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2025-05-08T20:13:11+00:00"
+last_updated = "2026-10-12T17:17:41+00:00"
+license = "MIT"
+language = "Jupyter Notebook"
+topics = [
+    "analysis",
+    "cohort-analysis",
+    "ltv",
+    "retention",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/ab_test"
+name = "ab_test"
+description = "A/B Testing Methodology Toolkit"
+website = "https://nikitaboyarkin.github.io/projects/ab/"
+stars = 4
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2025-06-19T19:12:11+00:00"
+last_updated = "2026-10-12T17:23:04+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "ab",
+    "ab-test",
+    "ab-testing",
+    "ab-testing-analysis",
+    "ab-tests",
+    "ab-tools",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/digital_garden"
+name = "digital_garden"
+description = "EQ in IT"
+website = "https://nikitaboyarkin.github.io/digital_garden/"
+stars = 4
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2025-05-26T21:16:16+00:00"
+last_updated = "2026-08-26T17:46:26+00:00"
+license = "MIT"
+language = "TypeScript"
+topics = []
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/volta-banking"
+name = "volta-banking"
+description = "End-to-End Product Analytics Pipeline"
+website = "https://nikitaboyarkin.github.io/projects/volta/"
+stars = 4
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-08-09T19:48:53+00:00"
+last_updated = "2026-10-12T17:17:46+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "ab-testing",
+    "analytics",
+    "banking",
+    "data-analysis",
+    "end-to-end",
+    "fintech",
+    "funnel",
+    "pandas",
+    "product",
+    "product-analytics",
+    "python",
+    "retention",
+    "scikit-learn",
+    "segmentation",
+    "statsmodels",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/my_cv"
+name = "my_cv"
+description = ""
+website = ""
+stars = 3
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2025-05-03T18:34:36+00:00"
+last_updated = "2026-10-12T16:26:26+00:00"
+license = "MIT"
+language = ""
+topics = []
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/sql-analytics-case-study"
+name = "sql-analytics-case-study"
+description = " End-to-End Product case studies "
+website = "https://nikitaboyarkin.github.io/projects/sql/"
+stars = 3
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-08-09T23:08:45+00:00"
+last_updated = "2026-10-12T17:23:43+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "case",
+    "product",
+    "sql",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/telegram_bot_public"
+name = "telegram_bot_public"
+description = ""
+website = ""
+stars = 3
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2025-06-19T19:50:22+00:00"
+last_updated = "2026-10-12T17:23:46+00:00"
+license = "MIT"
+language = ""
+topics = []
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/browser-mini-games"
+name = "browser-mini-games"
+description = "Playable browser mini-games as self-contained SVGs — snake, pong, 2048, A/B test, funnel drop"
+website = "https://nikitaboyarkin.github.io/browser-mini-games/"
+stars = 2
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-08-26T11:48:45+00:00"
+last_updated = "2026-10-12T17:16:26+00:00"
+license = "MIT"
+language = "Astro"
+topics = [
+    "games",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/ml"
+name = "ml"
+description = "ML fundamentals: scikit-learn pipeline — preprocessing, regression, classification, clustering"
+website = ""
+stars = 2
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-08-22T21:48:56+00:00"
+last_updated = "2026-10-12T17:23:27+00:00"
+license = "MIT"
+language = "Python"
+topics = []
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/scrolly-english-speaking"
+name = "scrolly-english-speaking"
+description = "Английский для рабочих разговоров"
+website = "https://nikitaboyarkin.github.io/scrolly-english-speaking/"
+stars = 2
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-08-16T20:48:38+00:00"
+last_updated = "2026-10-12T17:23:39+00:00"
+license = "MIT"
+language = "TypeScript"
+topics = [
+    "english",
+    "learning",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/airflow"
+name = "airflow"
+description = "Airflow DAG Platform: отчёты Postgres → Google Sheets/CSV с DQ-валидацией, алертами и метриками запусков (Apache Airflow 3, Python 3.14, uv)"
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-09-27T21:20:26+00:00"
+last_updated = "2026-10-12T17:23:10+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "airflow",
+    "data-engineering",
+    "google-sheets",
+    "portfolio",
+    "postgres",
+    "pytest",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-ab"
+name = "case-ab"
+description = "A KYC progress bar lifted conversion +5.72pp (Z=5.82, p<0.0001) against a +5pp MDE. CUPED, AA-test and Bonferroni protect the conclusion; +€656K/yr at 44× ROI."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T21:06:12+00:00"
+last_updated = "2026-10-12T17:17:49+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "ab-testing",
+    "data-analytics",
+    "experimentation",
+    "portfolio",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-anchor-cac"
+name = "case-anchor-cac"
+description = "LTV/CAC ≥3 holds only to ~70K users; at SOM it falls to 1.76× and a 17-month payback. The constraint is cheap-channel capacity, not budget."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T21:06:27+00:00"
+last_updated = "2026-10-12T17:17:54+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "data-analytics",
+    "marketing-analytics",
+    "portfolio",
+    "python",
+    "unit-economics",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-anomalies"
+name = "case-anomalies"
+description = "Z-score, IQR and Isolation Forest against ground truth. IF has the best F1 (50.4%), catching amount, night-hour and frequency anomalies; Z-score is precise but cautious."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T21:06:41+00:00"
+last_updated = "2026-10-12T17:17:55+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "anomaly-detection",
+    "data-analytics",
+    "portfolio",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-assisted-cac"
+name = "case-assisted-cac"
+description = "Does the 45+ trust track pay off: 45+ LTV/CAC = 0.66 against a ≥3 gate; assisted CAC €120 is ~3× referral and doesn't pay back (50-month payback)."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T21:06:55+00:00"
+last_updated = "2026-10-12T17:18:00+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "data-analytics",
+    "marketing-analytics",
+    "portfolio",
+    "python",
+    "unit-economics",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-attribution"
+name = "case-attribution"
+description = "First-touch, last-touch, linear and Shapley attribution. Shapley (data-driven) reallocates budget and leads with referral; the conclusion is robust to model choice."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T21:07:07+00:00"
+last_updated = "2026-10-12T17:18:05+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "attribution",
+    "data-analytics",
+    "marketing-analytics",
+    "portfolio",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-causal-kyc"
+name = "case-causal-kyc"
+description = "A DiD test shows the KYC fix causally lifted M3 retention by +9.09pp (95% CI [+6.21, +11.96]) — flat pre-trends, placebo ≈ 0, max |SMD| 0.157 < 0.2."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T21:07:17+00:00"
+last_updated = "2026-10-12T17:18:07+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "causal-inference",
+    "data-analytics",
+    "portfolio",
+    "python",
+    "uplift-modeling",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-churn"
+name = "case-churn"
+description = "Random Forest adds +0.03 ROC-AUC over logistic regression; the top churn driver is device-error rate (23.7%), not balance or activity."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T21:07:31+00:00"
+last_updated = "2026-10-12T17:18:10+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "churn-prediction",
+    "data-analytics",
+    "portfolio",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-clv"
+name = "case-clv"
+description = "Three lifetime-value methods: historical, retention-curve and Gamma-Gamma. The order Power > Growth > Casual > Dormant is robust across all methods."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T21:07:44+00:00"
+last_updated = "2026-10-12T17:18:13+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "clv",
+    "cohort-analysis",
+    "data-analytics",
+    "portfolio",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-dormant-winback"
+name = "case-dormant-winback"
+description = "Three-arm win-back: human +5.34pp and light-touch +2.77pp vs control. Light-touch pays off at 30–90d (ROI 2.54 / 1.26), human ROI 0.40 — kill as a mass channel."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T21:07:55+00:00"
+last_updated = "2026-10-12T17:18:15+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "campaigns",
+    "data-analytics",
+    "portfolio",
+    "python",
+    "retention",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-funnel"
+name = "case-funnel"
+description = "The neobank onboarding funnel: KYC is the bottleneck at 56.6% step conversion, registration loses the most in absolute terms (2,682). Broken down by channel and platform."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T21:08:07+00:00"
+last_updated = "2026-10-12T17:18:20+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "conversion-optimization",
+    "data-analytics",
+    "funnel-analysis",
+    "portfolio",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-fx-sourcing"
+name = "case-fx-sourcing"
+description = "The 0.55% gate is reachable only at SOM scale (~€332M/mo, 122× today) — a cold-start, not 'impossible'. Best quote is Interbank Prime at 0.745%."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T21:48:23+00:00"
+last_updated = "2026-10-12T17:22:17+00:00"
+license = "MIT"
+language = "Python"
+topics = []
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-jtbd"
+name = "case-jtbd"
+description = "Job segments and behavioral cohorts are not independent (chi² p<0.001): Dormant concentrates in Digital Newcomers 45+ (39.4%) vs Family Budgeters (15.1%)."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T22:17:03+00:00"
+last_updated = "2026-10-12T17:21:40+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "data-analytics",
+    "jobs-to-be-done",
+    "portfolio",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-kyc-45"
+name = "case-kyc-45"
+description = "Age-sliced A/B HTE: 35–44 +11.0pp and 18–24 +5.3pp, but 45+ +1.4pp (ns). Referral (trust) converts 45+ best — friction is trust, not UX."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-10T07:47:32+00:00"
+last_updated = "2026-10-12T17:21:43+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "ab-testing",
+    "conversion-optimization",
+    "data-analytics",
+    "portfolio",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-nps"
+name = "case-nps"
+description = "Monthly NPS hovers near zero; the strongest drivers are app quality (+30.3) and product (+29.4), the main source of dissatisfaction is fees (−59.4)."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T22:21:43+00:00"
+last_updated = "2026-10-12T17:21:46+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "data-analytics",
+    "portfolio",
+    "python",
+    "survey-analysis",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-premium-offers"
+name = "case-premium-offers"
+description = "A/B: a segment offer lifts gap segments (+3.3pp 45+, +4.2pp families, +3.8pp travelers) — Holm-significant, but the anchor barely moves."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T22:24:22+00:00"
+last_updated = "2026-10-12T17:21:53+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "data-analytics",
+    "portfolio",
+    "python",
+    "revenue",
+    "upsell",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-premium-upsell"
+name = "case-premium-upsell"
+description = "Free→Premium conversion concentrates in the anchor (17.3%) and status-seekers (41.2%); Digital Newcomers 45+ convert just 1.8% — the value prop doesn't transfer."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T22:30:13+00:00"
+last_updated = "2026-10-12T17:21:53+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "data-analytics",
+    "portfolio",
+    "python",
+    "revenue",
+    "upsell",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-referral"
+name = "case-referral"
+description = "Referral funnel by JTBD segment: anchor 29.6% vs Digital Newcomers 45+ 4.8% and families 8.6%. The gap opens at accept, not KYC."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T22:34:36+00:00"
+last_updated = "2026-10-12T17:21:55+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "data-analytics",
+    "portfolio",
+    "python",
+    "referral-marketing",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-retention"
+name = "case-retention"
+description = "Cohort triangles showed a step-change after the KYC fix: M1 +11.8pp, M3 +9.2pp and +€227K/yr LTV. Premium LTV is 4.3× Free."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T22:36:02+00:00"
+last_updated = "2026-10-12T17:21:59+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "cohort-analysis",
+    "data-analytics",
+    "portfolio",
+    "python",
+    "retention",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-rfm"
+name = "case-rfm"
+description = "R/F/M scoring 1–5 splits the base into lifecycle segments from Champions to Lost; recency and monetary diverge — 'frequent but cheap' and 'rare but large'."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T22:37:27+00:00"
+last_updated = "2026-10-12T17:22:02+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "customer-segmentation",
+    "data-analytics",
+    "portfolio",
+    "python",
+    "rfm",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-segmentation"
+name = "case-segmentation"
+description = "KMeans with data-driven K=4: Power 12% drive 41% of revenue, 68% drive 92%. Cross-segment migration is worth up to +€310K/yr."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T22:38:52+00:00"
+last_updated = "2026-10-12T17:22:05+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "customer-segmentation",
+    "data-analytics",
+    "portfolio",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-spend"
+name = "case-spend"
+description = "Spend breakdown by category and channel: bills (25.8%) and travel (20.2%) make up nearly half the turnover, groceries is the most frequent category."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-09T22:40:42+00:00"
+last_updated = "2026-10-12T17:22:08+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "data-analytics",
+    "portfolio",
+    "python",
+    "transaction-analytics",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-support-churn"
+name = "case-support-churn"
+description = "Churn rises with ticket count: 37.1% at zero contacts vs 81.1% at 3+. Support is a measurable retention lever, not just a cost center."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-10T07:48:58+00:00"
+last_updated = "2026-10-12T17:22:11+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "churn-prediction",
+    "customer-support",
+    "data-analytics",
+    "portfolio",
+    "python",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/case-unit-economics"
+name = "case-unit-economics"
+description = "Travelers lose €0.45 per €100 FX transaction; break-even needs FX cost cut from 1.00% to 0.55%, otherwise the loss grows with volume."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-10T07:50:23+00:00"
+last_updated = "2026-10-12T17:22:14+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "data-analytics",
+    "portfolio",
+    "python",
+    "unit-economics",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/causal-uplift"
+name = "causal-uplift"
+description = "Causal inference for product experiments"
+website = "https://nikitaboyarkin.github.io/projects/causal/"
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-09-18T07:46:00+00:00"
+last_updated = "2026-10-12T17:23:15+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "causal-inference",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/churn-prediction"
+name = "churn-prediction"
+description = "Churn Prediction"
+website = "https://nikitaboyarkin.github.io/projects/churn/"
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-09-18T07:45:47+00:00"
+last_updated = "2026-10-12T17:23:20+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "churnprediction",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/crm-experiment-lab"
+name = "crm-experiment-lab"
+description = "CRM Experiment Lab: synthetic CRM A/B experimentation — segment-stage randomization, global control group, send balancer, and net-of-unsubscribe campaign effect"
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-12T16:15:55+00:00"
+last_updated = "2026-10-12T17:34:36+00:00"
+license = "MIT"
+language = "Python"
+topics = []
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/rag-eval-harness"
+name = "rag-eval-harness"
+description = "RAG pipeline with an offline evaluation harness: TF-IDF retrieval, pluggable Claude generation, retrieval + generation metrics. Runs with zero API keys."
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-10T08:30:21+00:00"
+last_updated = "2026-10-12T17:23:34+00:00"
+license = "MIT"
+language = "Python"
+topics = [
+    "analytics",
+    "llm-evaluation",
+    "python",
+    "rag",
+    "retrieval",
+]
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/serp-rank-lab"
+name = "serp-rank-lab"
+description = "Flight-metasearch SERP analytics lab: ranking, position bias, partner monetisation and A/B readout"
+website = ""
+stars = 1
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2026-10-11T16:55:39+00:00"
+last_updated = "2026-10-12T17:17:30+00:00"
+license = "MIT"
+language = "Jupyter Notebook"
+topics = []
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/NLTK"
+name = "NLTK"
+description = ""
+website = ""
+stars = 0
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2019-08-28T15:47:29+00:00"
+last_updated = "2026-10-12T16:26:25+00:00"
+license = "MIT"
+language = "Python"
+topics = []
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/Python_algorithms"
+name = "Python_algorithms"
+description = ""
+website = ""
+stars = 0
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2019-09-15T16:06:09+00:00"
+last_updated = "2026-10-12T16:26:15+00:00"
+license = "MIT"
+language = "Python"
+topics = []
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/Python_data_structures"
+name = "Python_data_structures"
+description = ""
+website = ""
+stars = 0
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2019-09-15T15:51:26+00:00"
+last_updated = "2026-10-12T16:26:18+00:00"
+license = "MIT"
+language = "Python"
+topics = []
+contributors = []
+readme_image = ""
+
+[[repos]]
+repo = "NikitaBoyarkin/TensorFlow-and-Keras"
+name = "TensorFlow-and-Keras"
+description = ""
+website = ""
+stars = 0
+forks = 0
+latest_release = ""
+releases = 0
+first_commit = "2019-08-29T06:03:07+00:00"
+last_updated = "2026-10-12T16:26:23+00:00"
+license = "MIT"
+language = "Jupyter Notebook"
+topics = []
+contributors = []
+readme_image = ""

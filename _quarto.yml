@@ -1,0 +1,10 @@
+project:
+  type: hugo
+  render:
+    - "content/**/*.qmd"
+    - "content/**/*.ipynb"
+
+execute:
+  enabled: true
+
+format: hugo-md

@@ -1,0 +1,54 @@
+baseURL = 'https://example.com/oss-catalog/'
+# `languageCode` was deprecated in Hugo 0.158 in favour of `locale`.
+locale = 'en-us'
+defaultContentLanguage = 'en'
+title = 'Analytics Project Catalog'
+# enableGitInfo derives each page's Lastmod from its last git commit.
+# Leave it off until the repo has history; when you enable it, CI MUST check out
+# with fetch-depth: 0 or every page gets the same date.
+enableGitInfo = false
+
+# Hugo must never try to render authoring sources or editor/guide files.
+ignoreFiles = [
+  '\.qmd$', '\.ipynb$', '\.Rmd$', '\.Rmarkdown$',
+  'CLAUDE\.md$', 'CONTRIBUTING\.md$', '_authoring-guide\.md$', 'DATA-MODEL\.md$',
+  'renv/', '\.Rprofile$', 'renv\.lock$',
+  '\.venv/', 'pyproject\.toml$', 'uv\.lock$', 'requirements\.txt$',
+  '\.quarto/', '_extensions/', '_quarto\.yml$',
+  '\.original$',
+]
+
+[pagination]
+pagerSize = 24
+
+# Blog-style notes get a dated URL.
+[permalinks.page]
+notes = "/notes/:year-:month-:day/:slug/"
+
+# Taxonomies only -- note that `projects` is a CONTENT SECTION (content/projects/),
+# not a taxonomy, so it never collides with a taxonomy term URL.
+[taxonomies]
+  topic = 'topics'
+  language = 'languages'
+  tag = 'tags'
+
+# /llms.txt -- a curated site map for AI crawlers (https://llmstxt.org)
+[outputFormats.llms]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
+
+[outputs]
+  home = ['html', 'llms']
+  section = ['html']
+  taxonomy = ['html']
+  term = ['html']
+  page = ['html']
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    style = 'github-dark'
+    lineNos = true

@@ -1,0 +1,9 @@
+{{ $ext := .Params.external }}
+<a class="card" href="{{ .RelPermalink }}">
+  <h3>{{ .Title }}</h3>
+  <p>{{ with .Params.description }}{{ . }}{{ else }}{{ with $ext }}{{ .description }}{{ end }}{{ end }}</p>
+  <div class="meta">
+    {{ range .Params.languages }}<span class="chip">{{ . }}</span>{{ end }}
+    {{ with $ext }}{{ with .stars }}<span>★ {{ . }}</span>{{ end }}{{ end }}
+  </div>
+</a>

@@ -1,0 +1,29 @@
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Node
+node_modules/
+.yarn/
+
+# Pagefind
+public/pagefind/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Sync cache (regenerable from the GitHub API)
+data/.cache/
+
+# Quarto
+.quarto/
+_freeze/
+
+# Secrets
+.env
+
+# OS
+.DS_Store

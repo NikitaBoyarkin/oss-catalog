@@ -1,0 +1,14 @@
+# {{ site.Title }}
+
+> A data-driven catalog of open-source projects, with metadata synced from the GitHub API.
+
+## Projects
+{{ with site.GetPage "/projects" }}
+{{ range (.Pages).ByTitle }}
+- [{{ .Title }}]({{ .Permalink }}): {{ with .Params.description }}{{ . }}{{ else }}{{ with .Params.external }}{{ .description }}{{ end }}{{ end }}
+{{ end }}
+{{ end }}
+## Notes
+{{ range (where site.RegularPages "Section" "notes").ByTitle }}
+- [{{ .Title }}]({{ .Permalink }})
+{{ end }}
