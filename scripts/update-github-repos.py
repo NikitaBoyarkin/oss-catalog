@@ -11,7 +11,7 @@
 
 This file is the SOURCE OF TRUTH for machine-owned project data. Never hand-edit it;
 re-run this script instead. `update-project-frontmatter.py` mirrors each record into the
-matching content/projects/<name>/_index.md under an `external:` block.
+matching content/projects/<name>/index.md under an `external:` block.
 
 Usage:
   uv run scripts/update-github-repos.py                     # default owner, cached
@@ -101,10 +101,12 @@ def release_info(repo) -> tuple[str, int]:
 
 
 def contributors(repo) -> list[str]:
+    """Contributor logins, minus GitHub App/bot accounts (`name[bot]`)."""
     try:
-        return [c.login for c in repo.get_contributors()[:MAX_CONTRIBUTORS]]
+        logins = [c.login for c in repo.get_contributors()[:MAX_CONTRIBUTORS]]
     except GithubException:
         return []
+    return [login for login in logins if "[bot]" not in login.lower()]
 
 
 def build_record(repo, *, with_contributors: bool, skip_images: bool) -> dict:
@@ -208,6 +210,12 @@ def main() -> int:
     excludes = set(args.exclude or [])
     if excludes:
         records = [r for r in records if r["repo"] not in excludes]
+
+    # Normalise at write time so a stale cache can't leak bot accounts back in.
+    for r in records:
+        r["contributors"] = [
+            c for c in r.get("contributors", []) if "[bot]" not in c.lower()
+        ]
 
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)

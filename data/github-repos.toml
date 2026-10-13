@@ -59,7 +59,6 @@ language = "Python"
 topics = []
 contributors = [
     "NikitaBoyarkin",
-    "github-actions[bot]",
 ]
 readme_image = "https://raw.githubusercontent.com/NikitaBoyarkin/NikitaBoyarkin/main/hero.svg"
 
@@ -84,8 +83,6 @@ topics = [
 ]
 contributors = [
     "NikitaBoyarkin",
-    "github-actions[bot]",
-    "posthog[bot]",
 ]
 readme_image = "public/images/og/portfolio-banner-v2.png"
 
@@ -155,7 +152,6 @@ language = "TypeScript"
 topics = []
 contributors = [
     "NikitaBoyarkin",
-    "dependabot[bot]",
 ]
 readme_image = ""
 

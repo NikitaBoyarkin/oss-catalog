@@ -5,7 +5,7 @@
 # ///
 """Scaffold a project page for a repository.
 
-Creates content/projects/<name>/_index.md with a `github:` field. The machine-owned
+Creates content/projects/<name>/index.md with a `github:` field. The machine-owned
 `external:` block is added later by update-project-frontmatter.py -- do not hand-write it.
 
 Usage:
@@ -52,7 +52,7 @@ def load_records() -> list[dict]:
 
 
 def write_page(name: str, repo: str, description: str, force: bool) -> bool:
-    dest = PROJECTS_DIR / name / "_index.md"
+    dest = PROJECTS_DIR / name / "index.md"
     if dest.exists() and not force:
         console.print(f"[yellow]exists, skipping:[/] {dest.relative_to(REPO_ROOT)}")
         return False

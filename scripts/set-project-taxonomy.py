@@ -148,7 +148,7 @@ def main() -> int:
             return 1
 
     changed = 0
-    pages = sorted(PROJECTS_DIR.glob("*/_index.md"))
+    pages = sorted(PROJECTS_DIR.glob("*/index.md"))
     for page in pages:
         name = page.parent.name
         split = split_frontmatter(page.read_text(encoding="utf-8"))

@@ -23,7 +23,6 @@ external:
   - TypeScript
   contributors:
   - NikitaBoyarkin
-  - dependabot[bot]
 ---
 
 EQ in IT

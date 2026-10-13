@@ -24,8 +24,6 @@ external:
   - HTML
   contributors:
   - NikitaBoyarkin
-  - github-actions[bot]
-  - posthog[bot]
 ---
 
 Product Analyst Portfolio

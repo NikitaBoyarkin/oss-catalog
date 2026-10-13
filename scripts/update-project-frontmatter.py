@@ -3,7 +3,7 @@
 # requires-python = ">=3.11"
 # dependencies = ["pyyaml>=6.0", "rich>=13.0.0"]
 # ///
-"""Merge data/github-repos.toml into content/projects/*/_index.md.
+"""Merge data/github-repos.toml into content/projects/*/index.md.
 
 For each project page we read the `github: owner/name` field from its frontmatter, look up the
 matching record in data/github-repos.toml, and (re)write:
@@ -80,7 +80,7 @@ def main() -> int:
     by_name = {r["name"]: r for r in by_repo.values()}
     updated = 0
 
-    for page in sorted(PROJECTS_DIR.glob("*/_index.md")):
+    for page in sorted(PROJECTS_DIR.glob("*/index.md")):
         split = split_frontmatter(page.read_text(encoding="utf-8"))
         if split is None:
             console.print(

@@ -22,7 +22,6 @@ external:
   - Python
   contributors:
   - NikitaBoyarkin
-  - github-actions[bot]
 ---
 
 
