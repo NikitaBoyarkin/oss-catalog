@@ -32,7 +32,8 @@ jobs:
           extended: true
 
       - name: Setup uv
-        uses: astral-sh/setup-uv@v10
+        # Exact tag: this action publishes floating majors only up to v7.
+        uses: astral-sh/setup-uv@v10.3.0
         with:
           # No lockfile in this repo (scripts use inline PEP 723 deps), so uv's
           # cache would never invalidate. Keep CI honest and skip it.
