@@ -60,6 +60,17 @@ external tooling, the starter ships hand-written CSS. Add Tailwind by putting
 `@import "tailwindcss";` in `assets/css/main.css`, adding `@tailwindcss/cli` to `package.json`,
 and switching `baseof.html` to Hugo's `css.TailwindCSS` pipe.
 
+## Deployment
+
+Pushing to `main` triggers `.github/workflows/build.yml`, which validates notes, builds the site
+(and fails on any Hugo warning), builds the Pagefind index, and deploys to GitHub Pages at
+**https://nikitaboarkin.github.io/oss-catalog/**. Pages must be set to *GitHub Actions* as the
+source (Settings -> Pages), which is done once via the API:
+
+```sh
+gh api -X POST repos/<owner>/<repo>/pages -f build_type=workflow
+```
+
 ## Credits
 
 Pattern derived from `posit-dev/open-source-website` (MIT).
