@@ -3,10 +3,10 @@ baseURL = 'https://nikitaboarkin.github.io/oss-catalog/'
 locale = 'en-us'
 defaultContentLanguage = 'en'
 title = 'Analytics Project Catalog'
-# enableGitInfo derives each page's Lastmod from its last git commit.
-# Leave it off until the repo has history; when you enable it, CI MUST check out
-# with fetch-depth: 0 or every page gets the same date.
-enableGitInfo = false
+# enableGitInfo derives each page's Lastmod from its last git commit, so feeds and
+# sitemaps carry real edit dates. CI MUST check out with fetch-depth: 0 (it does) or a
+# shallow clone stamps every page with the same commit date.
+enableGitInfo = true
 
 # Hugo must never try to render authoring sources or editor/guide files.
 ignoreFiles = [
