@@ -4,8 +4,11 @@ description: 'CRM Experiment Lab: synthetic CRM A/B experimentation — segment-
   randomization, global control group, send balancer, and net-of-unsubscribe campaign
   effect'
 github: NikitaBoyarkin/crm-experiment-lab
-topics: []
-tags: []
+topics:
+- Experimentation
+tags:
+- experimentation
+- srm
 languages:
 - Python
 
@@ -23,7 +26,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 CRM Experiment Lab: synthetic CRM A/B experimentation — segment-stage randomization, global control group, send balancer, and net-of-unsubscribe campaign effect

@@ -4,7 +4,9 @@ description: 'ML fundamentals: scikit-learn pipeline — preprocessing, regressi
   classification, clustering'
 github: NikitaBoyarkin/ml
 topics: []
-tags: []
+tags:
+- machine-learning
+- scikit-learn
 languages:
 - Python
 
@@ -21,7 +23,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 ML fundamentals: scikit-learn pipeline — preprocessing, regression, classification, clustering

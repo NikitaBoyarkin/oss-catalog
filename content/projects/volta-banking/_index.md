@@ -2,8 +2,13 @@
 title: volta-banking
 description: End-to-End Product Analytics Pipeline
 github: NikitaBoyarkin/volta-banking
-topics: []
-tags: []
+topics:
+- Product Metrics
+- Data Engineering
+tags:
+- pipeline
+- etl
+- dbt
 languages:
 - Python
 
@@ -19,7 +24,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 End-to-End Product Analytics Pipeline

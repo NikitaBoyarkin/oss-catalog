@@ -3,7 +3,9 @@ title: Python_algorithms
 description: ''
 github: NikitaBoyarkin/Python_algorithms
 topics: []
-tags: []
+tags:
+- algorithms
+- python
 languages:
 - Python
 
@@ -19,7 +21,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 

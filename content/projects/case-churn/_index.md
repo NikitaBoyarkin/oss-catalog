@@ -3,8 +3,11 @@ title: case-churn
 description: Random Forest adds +0.03 ROC-AUC over logistic regression; the top churn
   driver is device-error rate (23.7%), not balance or activity.
 github: NikitaBoyarkin/case-churn
-topics: []
-tags: []
+topics:
+- Cohorts and Retention
+tags:
+- churn
+- classification
 languages:
 - Python
 
@@ -21,7 +24,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Random Forest adds +0.03 ROC-AUC over logistic regression; the top churn driver is device-error rate (23.7%), not balance or activity.

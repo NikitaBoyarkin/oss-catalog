@@ -3,8 +3,11 @@ title: case-referral
 description: 'Referral funnel by JTBD segment: anchor 29.6% vs Digital Newcomers 45+
   4.8% and families 8.6%. The gap opens at accept, not KYC.'
 github: NikitaBoyarkin/case-referral
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- referral
+- funnel
 languages:
 - Python
 
@@ -21,7 +24,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Referral funnel by JTBD segment: anchor 29.6% vs Digital Newcomers 45+ 4.8% and families 8.6%. The gap opens at accept, not KYC.

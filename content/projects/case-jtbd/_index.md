@@ -3,8 +3,11 @@ title: case-jtbd
 description: 'Job segments and behavioral cohorts are not independent (chi² p<0.001):
   Dormant concentrates in Digital Newcomers 45+ (39.4%) vs Family Budgeters (15.1%).'
 github: NikitaBoyarkin/case-jtbd
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- jtbd
+- segmentation
 languages:
 - Python
 
@@ -21,7 +24,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Job segments and behavioral cohorts are not independent (chi² p<0.001): Dormant concentrates in Digital Newcomers 45+ (39.4%) vs Family Budgeters (15.1%).

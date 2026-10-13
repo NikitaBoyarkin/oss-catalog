@@ -3,8 +3,11 @@ title: case-spend
 description: 'Spend breakdown by category and channel: bills (25.8%) and travel (20.2%)
   make up nearly half the turnover, groceries is the most frequent category.'
 github: NikitaBoyarkin/case-spend
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- spend
+- segmentation
 languages:
 - Python
 
@@ -21,7 +24,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Spend breakdown by category and channel: bills (25.8%) and travel (20.2%) make up nearly half the turnover, groceries is the most frequent category.

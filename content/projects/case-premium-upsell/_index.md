@@ -3,8 +3,11 @@ title: case-premium-upsell
 description: Free→Premium conversion concentrates in the anchor (17.3%) and status-seekers
   (41.2%); Digital Newcomers 45+ convert just 1.8% — the value prop doesn't transfer.
 github: NikitaBoyarkin/case-premium-upsell
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- conversion
+- upsell
 languages:
 - Python
 
@@ -21,7 +24,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Free→Premium conversion concentrates in the anchor (17.3%) and status-seekers (41.2%); Digital Newcomers 45+ convert just 1.8% — the value prop doesn't transfer.

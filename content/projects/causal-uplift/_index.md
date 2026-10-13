@@ -2,8 +2,11 @@
 title: causal-uplift
 description: Causal inference for product experiments
 github: NikitaBoyarkin/causal-uplift
-topics: []
-tags: []
+topics:
+- Causal Inference
+tags:
+- uplift
+- causal-ml
 languages:
 - Python
 
@@ -19,7 +22,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Causal inference for product experiments

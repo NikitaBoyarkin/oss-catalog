@@ -2,8 +2,13 @@
 title: tableau_cohort_analysis
 description: Когортный анализ удержания и LTV
 github: NikitaBoyarkin/tableau_cohort_analysis
-topics: []
-tags: []
+topics:
+- Cohorts and Retention
+- Dashboards and BI
+tags:
+- tableau
+- cohorts
+- ltv
 languages:
 - Jupyter Notebook
 
@@ -19,7 +24,8 @@ external:
   license: MIT
   languages:
   - Jupyter Notebook
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Когортный анализ удержания и LTV

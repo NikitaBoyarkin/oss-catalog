@@ -3,8 +3,13 @@ title: serp-rank-lab
 description: 'Flight-metasearch SERP analytics lab: ranking, position bias, partner
   monetisation and A/B readout'
 github: NikitaBoyarkin/serp-rank-lab
-topics: []
-tags: []
+topics:
+- Experimentation
+- Product Metrics
+tags:
+- ranking
+- serp
+- position-bias
 languages:
 - Jupyter Notebook
 
@@ -21,7 +26,8 @@ external:
   license: MIT
   languages:
   - Jupyter Notebook
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Flight-metasearch SERP analytics lab: ranking, position bias, partner monetisation and A/B readout

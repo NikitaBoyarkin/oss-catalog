@@ -27,6 +27,8 @@ notes = "/notes/:year-:month-:day/:slug/"
 
 # Taxonomies only -- note that `projects` is a CONTENT SECTION (content/projects/),
 # not a taxonomy, so it never collides with a taxonomy term URL.
+# Taxonomy VALUES must not contain "/": Hugo turns it into a nested path segment
+# (e.g. "A/B Testing" -> /topics/a/b-testing/). Use slash-free terms like "Experimentation".
 [taxonomies]
   topic = 'topics'
   language = 'languages'

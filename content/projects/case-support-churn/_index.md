@@ -3,8 +3,11 @@ title: case-support-churn
 description: 'Churn rises with ticket count: 37.1% at zero contacts vs 81.1% at 3+.
   Support is a measurable retention lever, not just a cost center.'
 github: NikitaBoyarkin/case-support-churn
-topics: []
-tags: []
+topics:
+- Cohorts and Retention
+tags:
+- churn
+- support
 languages:
 - Python
 
@@ -21,7 +24,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Churn rises with ticket count: 37.1% at zero contacts vs 81.1% at 3+. Support is a measurable retention lever, not just a cost center.

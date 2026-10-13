@@ -4,8 +4,13 @@ description: A KYC progress bar lifted conversion +5.72pp (Z=5.82, p<0.0001) aga
   a +5pp MDE. CUPED, AA-test and Bonferroni protect the conclusion; +€656K/yr at 44×
   ROI.
 github: NikitaBoyarkin/case-ab
-topics: []
-tags: []
+topics:
+- Experimentation
+- Product Metrics
+tags:
+- cuped
+- kyc
+- hte
 languages:
 - Python
 
@@ -23,7 +28,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 A KYC progress bar lifted conversion +5.72pp (Z=5.82, p<0.0001) against a +5pp MDE. CUPED, AA-test and Bonferroni protect the conclusion; +€656K/yr at 44× ROI.

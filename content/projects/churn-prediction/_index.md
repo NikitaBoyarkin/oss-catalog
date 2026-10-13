@@ -2,8 +2,11 @@
 title: churn-prediction
 description: Churn Prediction
 github: NikitaBoyarkin/churn-prediction
-topics: []
-tags: []
+topics:
+- Cohorts and Retention
+tags:
+- churn
+- machine-learning
 languages:
 - Python
 
@@ -19,7 +22,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Churn Prediction

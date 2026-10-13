@@ -3,8 +3,12 @@ title: case-rfm
 description: R/F/M scoring 1–5 splits the base into lifecycle segments from Champions
   to Lost; recency and monetary diverge — 'frequent but cheap' and 'rare but large'.
 github: NikitaBoyarkin/case-rfm
-topics: []
-tags: []
+topics:
+- Cohorts and Retention
+- Product Metrics
+tags:
+- rfm
+- segmentation
 languages:
 - Python
 
@@ -21,7 +25,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 R/F/M scoring 1–5 splits the base into lifecycle segments from Champions to Lost; recency and monetary diverge — 'frequent but cheap' and 'rare but large'.

@@ -3,8 +3,12 @@ title: case-kyc-45
 description: 'Age-sliced A/B HTE: 35–44 +11.0pp and 18–24 +5.3pp, but 45+ +1.4pp (ns).
   Referral (trust) converts 45+ best — friction is trust, not UX.'
 github: NikitaBoyarkin/case-kyc-45
-topics: []
-tags: []
+topics:
+- Experimentation
+- Causal Inference
+tags:
+- hte
+- segmentation
 languages:
 - Python
 
@@ -21,7 +25,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Age-sliced A/B HTE: 35–44 +11.0pp and 18–24 +5.3pp, but 45+ +1.4pp (ns). Referral (trust) converts 45+ best — friction is trust, not UX.

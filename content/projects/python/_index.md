@@ -4,7 +4,10 @@ description: 'Python analytics playground: data loading, cleaning, EDA, visualiz
   (tested ≥80%)'
 github: NikitaBoyarkin/python
 topics: []
-tags: []
+tags:
+- eda
+- pandas
+- python
 languages:
 - Python
 
@@ -21,7 +24,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Python analytics playground: data loading, cleaning, EDA, visualization (tested ≥80%)

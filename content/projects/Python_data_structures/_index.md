@@ -3,7 +3,9 @@ title: Python_data_structures
 description: ''
 github: NikitaBoyarkin/Python_data_structures
 topics: []
-tags: []
+tags:
+- data-structures
+- python
 languages:
 - Python
 
@@ -19,7 +21,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 

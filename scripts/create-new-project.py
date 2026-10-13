@@ -1,6 +1,7 @@
 #!/usr/bin/env -S uv run
 # /// script
-# dependencies = ["tomli>=2.0.0", "pyyaml>=6.0", "rich>=13.0.0"]
+# requires-python = ">=3.11"
+# dependencies = ["pyyaml>=6.0", "rich>=13.0.0"]
 # ///
 """Scaffold a project page for a repository.
 

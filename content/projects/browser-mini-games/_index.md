@@ -4,7 +4,10 @@ description: Playable browser mini-games as self-contained SVGs — snake, pong,
   A/B test, funnel drop
 github: NikitaBoyarkin/browser-mini-games
 topics: []
-tags: []
+tags:
+- svg
+- games
+- astro
 languages:
 - Astro
 
@@ -21,7 +24,8 @@ external:
   license: MIT
   languages:
   - Astro
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Playable browser mini-games as self-contained SVGs — snake, pong, 2048, A/B test, funnel drop

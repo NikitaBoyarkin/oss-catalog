@@ -1,5 +1,6 @@
 #!/usr/bin/env -S uv run
 # /// script
+# requires-python = ">=3.11"
 # dependencies = [
 #   "PyGithub>=2.1.1",
 #   "tomli-w>=1.0.0",
@@ -182,6 +183,13 @@ def main() -> int:
     parser.add_argument(
         "--limit", type=int, default=0, help="cap number of repos (0 = all)"
     )
+    parser.add_argument(
+        "--exclude",
+        action="append",
+        default=["NikitaBoyarkin/oss-catalog"],
+        metavar="OWNER/NAME",
+        help="repo to omit (repeatable; defaults to this catalog itself)",
+    )
     args = parser.parse_args()
 
     cache_file = Path(args.cache_file)
@@ -196,6 +204,10 @@ def main() -> int:
         )
         cache_file.parent.mkdir(parents=True, exist_ok=True)
         cache_file.write_text(json.dumps(records, ensure_ascii=False, indent=2))
+
+    excludes = set(args.exclude or [])
+    if excludes:
+        records = [r for r in records if r["repo"] not in excludes]
 
     out = Path(args.output)
     out.parent.mkdir(parents=True, exist_ok=True)

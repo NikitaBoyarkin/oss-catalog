@@ -2,8 +2,12 @@
 title: sql-analytics-case-study
 description: ' End-to-End Product case studies '
 github: NikitaBoyarkin/sql-analytics-case-study
-topics: []
-tags: []
+topics:
+- SQL Analytics
+- Product Metrics
+tags:
+- sql
+- case-study
 languages:
 - Python
 
@@ -19,7 +23,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
  End-to-End Product case studies 

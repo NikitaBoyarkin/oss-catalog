@@ -3,7 +3,7 @@ title: Reading an A/B test like a decision, not a p-value
 date: 2026-10-13
 description: How to turn an experiment readout into a ship / extend / stop decision.
 topics:
-  - A/B Testing
+  - Experimentation
 tags:
   - experimentation
 ---

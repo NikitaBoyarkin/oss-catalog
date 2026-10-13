@@ -4,8 +4,11 @@ description: Z-score, IQR and Isolation Forest against ground truth. IF has the 
   F1 (50.4%), catching amount, night-hour and frequency anomalies; Z-score is precise
   but cautious.
 github: NikitaBoyarkin/case-anomalies
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- anomaly-detection
+- statistics
 languages:
 - Python
 
@@ -23,7 +26,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Z-score, IQR and Isolation Forest against ground truth. IF has the best F1 (50.4%), catching amount, night-hour and frequency anomalies; Z-score is precise but cautious.

@@ -3,8 +3,12 @@ title: airflow
 description: 'Airflow DAG Platform: отчёты Postgres → Google Sheets/CSV с DQ-валидацией,
   алертами и метриками запусков (Apache Airflow 3, Python 3.14, uv)'
 github: NikitaBoyarkin/airflow
-topics: []
-tags: []
+topics:
+- Data Engineering
+tags:
+- airflow
+- etl
+- data-quality
 languages:
 - Python
 
@@ -21,7 +25,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Airflow DAG Platform: отчёты Postgres → Google Sheets/CSV с DQ-валидацией, алертами и метриками запусков (Apache Airflow 3, Python 3.14, uv)

@@ -3,8 +3,12 @@ title: case-retention
 description: 'Cohort triangles showed a step-change after the KYC fix: M1 +11.8pp,
   M3 +9.2pp and +€227K/yr LTV. Premium LTV is 4.3× Free.'
 github: NikitaBoyarkin/case-retention
-topics: []
-tags: []
+topics:
+- Cohorts and Retention
+tags:
+- cohorts
+- retention
+- ltv
 languages:
 - Python
 
@@ -21,7 +25,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Cohort triangles showed a step-change after the KYC fix: M1 +11.8pp, M3 +9.2pp and +€227K/yr LTV. Premium LTV is 4.3× Free.

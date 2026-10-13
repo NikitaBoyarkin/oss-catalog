@@ -3,8 +3,12 @@ title: case-premium-offers
 description: 'A/B: a segment offer lifts gap segments (+3.3pp 45+, +4.2pp families,
   +3.8pp travelers) — Holm-significant, but the anchor barely moves.'
 github: NikitaBoyarkin/case-premium-offers
-topics: []
-tags: []
+topics:
+- Experimentation
+- Product Metrics
+tags:
+- segmentation
+- offers
 languages:
 - Python
 
@@ -21,7 +25,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 A/B: a segment offer lifts gap segments (+3.3pp 45+, +4.2pp families, +3.8pp travelers) — Holm-significant, but the anchor barely moves.

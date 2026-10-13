@@ -3,8 +3,11 @@ title: case-attribution
 description: First-touch, last-touch, linear and Shapley attribution. Shapley (data-driven)
   reallocates budget and leads with referral; the conclusion is robust to model choice.
 github: NikitaBoyarkin/case-attribution
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- attribution
+- marketing-mix
 languages:
 - Python
 
@@ -22,7 +25,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 First-touch, last-touch, linear and Shapley attribution. Shapley (data-driven) reallocates budget and leads with referral; the conclusion is robust to model choice.

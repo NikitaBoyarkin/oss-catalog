@@ -3,8 +3,11 @@ title: case-nps
 description: Monthly NPS hovers near zero; the strongest drivers are app quality (+30.3)
   and product (+29.4), the main source of dissatisfaction is fees (−59.4).
 github: NikitaBoyarkin/case-nps
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- nps
+- survey
 languages:
 - Python
 
@@ -21,7 +24,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Monthly NPS hovers near zero; the strongest drivers are app quality (+30.3) and product (+29.4), the main source of dissatisfaction is fees (−59.4).

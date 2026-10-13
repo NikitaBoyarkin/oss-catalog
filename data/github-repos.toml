@@ -16,8 +16,10 @@ topics = [
     "rfm-analysis",
     "rfm-segmentation",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "images/segment_distribution.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/python"
@@ -36,7 +38,9 @@ topics = [
     "analysis",
     "python",
 ]
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -53,8 +57,11 @@ last_updated = "2026-10-13T11:51:44+00:00"
 license = "MIT"
 language = "Python"
 topics = []
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+    "github-actions[bot]",
+]
+readme_image = "https://raw.githubusercontent.com/NikitaBoyarkin/NikitaBoyarkin/main/hero.svg"
 
 [[repos]]
 repo = "NikitaBoyarkin/NikitaBoyarkin.github.io"
@@ -75,8 +82,12 @@ topics = [
     "portfolio",
     "product-analytics",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+    "github-actions[bot]",
+    "posthog[bot]",
+]
+readme_image = "public/images/og/portfolio-banner-v2.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/tableau_cohort_analysis"
@@ -97,8 +108,10 @@ topics = [
     "ltv",
     "retention",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "images/retention-heatmap.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/ab_test"
@@ -121,7 +134,9 @@ topics = [
     "ab-tests",
     "ab-tools",
 ]
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -138,7 +153,10 @@ last_updated = "2026-08-26T17:46:26+00:00"
 license = "MIT"
 language = "TypeScript"
 topics = []
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+    "dependabot[bot]",
+]
 readme_image = ""
 
 [[repos]]
@@ -171,8 +189,10 @@ topics = [
     "segmentation",
     "statsmodels",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "docs/board/og_image.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/my_cv"
@@ -188,7 +208,9 @@ last_updated = "2026-10-12T16:26:26+00:00"
 license = "MIT"
 language = ""
 topics = []
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -209,7 +231,9 @@ topics = [
     "product",
     "sql",
 ]
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -226,7 +250,9 @@ last_updated = "2026-10-12T17:23:46+00:00"
 license = "MIT"
 language = ""
 topics = []
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -245,7 +271,9 @@ language = "Astro"
 topics = [
     "games",
 ]
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -262,7 +290,9 @@ last_updated = "2026-10-12T17:23:27+00:00"
 license = "MIT"
 language = "Python"
 topics = []
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -282,7 +312,10 @@ topics = [
     "english",
     "learning",
 ]
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+    "astrobot-houston",
+]
 readme_image = ""
 
 [[repos]]
@@ -307,7 +340,9 @@ topics = [
     "pytest",
     "python",
 ]
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -330,8 +365,10 @@ topics = [
     "portfolio",
     "python",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/ab_conversion_comparison.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-anchor-cac"
@@ -353,8 +390,10 @@ topics = [
     "python",
     "unit-economics",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/anchor_cac_marginal_curves.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-anomalies"
@@ -375,8 +414,10 @@ topics = [
     "portfolio",
     "python",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/anomaly_detections.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-assisted-cac"
@@ -398,8 +439,10 @@ topics = [
     "python",
     "unit-economics",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/assisted_ltv_cac_by_segment_channel.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-attribution"
@@ -421,8 +464,10 @@ topics = [
     "portfolio",
     "python",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/attribution_models.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-causal-kyc"
@@ -444,8 +489,10 @@ topics = [
     "python",
     "uplift-modeling",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/causal_kyc_trends.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-churn"
@@ -466,8 +513,10 @@ topics = [
     "portfolio",
     "python",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "/images/volta/churn_shap_local.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-clv"
@@ -489,8 +538,10 @@ topics = [
     "portfolio",
     "python",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/clv_by_method.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-dormant-winback"
@@ -512,8 +563,10 @@ topics = [
     "python",
     "retention",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/dormant_winback_reactivation.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-funnel"
@@ -535,8 +588,10 @@ topics = [
     "portfolio",
     "python",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/viz1_main_funnel.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-fx-sourcing"
@@ -552,8 +607,10 @@ last_updated = "2026-10-12T17:22:17+00:00"
 license = "MIT"
 language = "Python"
 topics = []
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/fx_sourcing_provider_ranking.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-jtbd"
@@ -574,8 +631,10 @@ topics = [
     "portfolio",
     "python",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/jtbd_segment_cohort_heatmap.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-kyc-45"
@@ -597,8 +656,10 @@ topics = [
     "portfolio",
     "python",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/kyc_hte_by_age.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-nps"
@@ -619,8 +680,10 @@ topics = [
     "python",
     "survey-analysis",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/nps_by_driver.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-premium-offers"
@@ -642,8 +705,10 @@ topics = [
     "revenue",
     "upsell",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/premium_offers_conversion_by_segment_arm.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-premium-upsell"
@@ -665,8 +730,10 @@ topics = [
     "revenue",
     "upsell",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/premium_upsell_conversion_by_segment.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-referral"
@@ -687,8 +754,10 @@ topics = [
     "python",
     "referral-marketing",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/referral_conversion_by_segment.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-retention"
@@ -710,8 +779,10 @@ topics = [
     "python",
     "retention",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/cohort_heatmap.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-rfm"
@@ -733,8 +804,10 @@ topics = [
     "python",
     "rfm",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/rfm_heatmap.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-segmentation"
@@ -755,8 +828,10 @@ topics = [
     "portfolio",
     "python",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/segmentation_k_selection.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-spend"
@@ -777,8 +852,10 @@ topics = [
     "python",
     "transaction-analytics",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/spend_by_category.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-support-churn"
@@ -800,8 +877,10 @@ topics = [
     "portfolio",
     "python",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/cs_churn_by_tickets.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/case-unit-economics"
@@ -822,8 +901,10 @@ topics = [
     "python",
     "unit-economics",
 ]
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "outputs/traveler_fx_break_even.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/causal-uplift"
@@ -841,7 +922,9 @@ language = "Python"
 topics = [
     "causal-inference",
 ]
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -860,7 +943,9 @@ language = "Python"
 topics = [
     "churnprediction",
 ]
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -877,7 +962,9 @@ last_updated = "2026-10-12T17:34:36+00:00"
 license = "MIT"
 language = "Python"
 topics = []
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -900,7 +987,9 @@ topics = [
     "rag",
     "retrieval",
 ]
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -917,8 +1006,10 @@ last_updated = "2026-10-12T17:17:30+00:00"
 license = "MIT"
 language = "Jupyter Notebook"
 topics = []
-contributors = []
-readme_image = ""
+contributors = [
+    "NikitaBoyarkin",
+]
+readme_image = "reports/figures/ranking_divergence.png"
 
 [[repos]]
 repo = "NikitaBoyarkin/NLTK"
@@ -934,7 +1025,9 @@ last_updated = "2026-10-12T16:26:25+00:00"
 license = "MIT"
 language = "Python"
 topics = []
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -951,7 +1044,9 @@ last_updated = "2026-10-12T16:26:15+00:00"
 license = "MIT"
 language = "Python"
 topics = []
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -968,7 +1063,9 @@ last_updated = "2026-10-12T16:26:18+00:00"
 license = "MIT"
 language = "Python"
 topics = []
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""
 
 [[repos]]
@@ -985,5 +1082,7 @@ last_updated = "2026-10-12T16:26:23+00:00"
 license = "MIT"
 language = "Jupyter Notebook"
 topics = []
-contributors = []
+contributors = [
+    "NikitaBoyarkin",
+]
 readme_image = ""

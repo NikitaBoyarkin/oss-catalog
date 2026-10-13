@@ -3,8 +3,11 @@ title: case-fx-sourcing
 description: The 0.55% gate is reachable only at SOM scale (~€332M/mo, 122× today)
   — a cold-start, not 'impossible'. Best quote is Interbank Prime at 0.745%.
 github: NikitaBoyarkin/case-fx-sourcing
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- unit-economics
+- fx
 languages:
 - Python
 
@@ -21,7 +24,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 The 0.55% gate is reachable only at SOM scale (~€332M/mo, 122× today) — a cold-start, not 'impossible'. Best quote is Interbank Prime at 0.745%.

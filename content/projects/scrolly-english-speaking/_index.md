@@ -3,7 +3,10 @@ title: scrolly-english-speaking
 description: Английский для рабочих разговоров
 github: NikitaBoyarkin/scrolly-english-speaking
 topics: []
-tags: []
+tags:
+- scrollytelling
+- d3
+- english
 languages:
 - TypeScript
 
@@ -19,7 +22,9 @@ external:
   license: MIT
   languages:
   - TypeScript
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
+  - astrobot-houston
 ---
 
 Английский для рабочих разговоров

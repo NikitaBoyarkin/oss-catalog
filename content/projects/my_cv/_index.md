@@ -3,7 +3,9 @@ title: my_cv
 description: ''
 github: NikitaBoyarkin/my_cv
 topics: []
-tags: []
+tags:
+- resume
+- career
 
 # updated automatically, do not edit
 external:
@@ -16,7 +18,8 @@ external:
   last_updated: '2026-10-12T16:26:26+00:00'
   license: MIT
   languages: []
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 

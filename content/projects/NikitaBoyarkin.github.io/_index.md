@@ -2,8 +2,11 @@
 title: NikitaBoyarkin.github.io
 description: Product Analyst Portfolio
 github: NikitaBoyarkin/NikitaBoyarkin.github.io
-topics: []
-tags: []
+topics:
+- Dashboards and BI
+tags:
+- portfolio
+- website
 languages:
 - HTML
 
@@ -19,7 +22,10 @@ external:
   license: NOASSERTION
   languages:
   - HTML
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
+  - github-actions[bot]
+  - posthog[bot]
 ---
 
 Product Analyst Portfolio

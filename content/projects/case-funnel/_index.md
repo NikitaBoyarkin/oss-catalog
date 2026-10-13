@@ -4,8 +4,11 @@ description: 'The neobank onboarding funnel: KYC is the bottleneck at 56.6% step
   registration loses the most in absolute terms (2,682). Broken down by channel and
   platform.'
 github: NikitaBoyarkin/case-funnel
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- funnel
+- conversion
 languages:
 - Python
 
@@ -23,7 +26,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 The neobank onboarding funnel: KYC is the bottleneck at 56.6% step conversion, registration loses the most in absolute terms (2,682). Broken down by channel and platform.

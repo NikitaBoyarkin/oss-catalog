@@ -4,8 +4,12 @@ description: 'Three-arm win-back: human +5.34pp and light-touch +2.77pp vs contr
   Light-touch pays off at 30–90d (ROI 2.54 / 1.26), human ROI 0.40 — kill as a mass
   channel.'
 github: NikitaBoyarkin/case-dormant-winback
-topics: []
-tags: []
+topics:
+- Experimentation
+- Cohorts and Retention
+tags:
+- winback
+- experimentation
 languages:
 - Python
 
@@ -23,7 +27,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Three-arm win-back: human +5.34pp and light-touch +2.77pp vs control. Light-touch pays off at 30–90d (ROI 2.54 / 1.26), human ROI 0.40 — kill as a mass channel.

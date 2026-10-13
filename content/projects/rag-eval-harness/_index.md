@@ -3,8 +3,12 @@ title: rag-eval-harness
 description: 'RAG pipeline with an offline evaluation harness: TF-IDF retrieval, pluggable
   Claude generation, retrieval + generation metrics. Runs with zero API keys.'
 github: NikitaBoyarkin/rag-eval-harness
-topics: []
-tags: []
+topics:
+- LLM and RAG
+tags:
+- rag
+- evaluation
+- llm
 languages:
 - Python
 
@@ -22,7 +26,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 RAG pipeline with an offline evaluation harness: TF-IDF retrieval, pluggable Claude generation, retrieval + generation metrics. Runs with zero API keys.

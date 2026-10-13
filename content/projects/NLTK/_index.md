@@ -2,8 +2,11 @@
 title: NLTK
 description: ''
 github: NikitaBoyarkin/NLTK
-topics: []
-tags: []
+topics:
+- LLM and RAG
+tags:
+- nlp
+- nltk
 languages:
 - Python
 
@@ -19,7 +22,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 

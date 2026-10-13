@@ -38,3 +38,7 @@ create-new-project *args:
 # Validate note frontmatter and placement
 validate-notes *args:
     uv run scripts/validate-notes.py {{args}}
+
+# Apply the curated topics/tags mapping to project pages
+set-project-taxonomy *args:
+    uv run scripts/set-project-taxonomy.py {{args}}

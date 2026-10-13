@@ -3,8 +3,12 @@ title: case-anchor-cac
 description: LTV/CAC ≥3 holds only to ~70K users; at SOM it falls to 1.76× and a 17-month
   payback. The constraint is cheap-channel capacity, not budget.
 github: NikitaBoyarkin/case-anchor-cac
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- unit-economics
+- ltv
+- cac
 languages:
 - Python
 
@@ -21,7 +25,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 LTV/CAC ≥3 holds only to ~70K users; at SOM it falls to 1.76× and a 17-month payback. The constraint is cheap-channel capacity, not budget.

@@ -3,7 +3,9 @@ title: telegram_bot_public
 description: ''
 github: NikitaBoyarkin/telegram_bot_public
 topics: []
-tags: []
+tags:
+- telegram
+- bot
 
 # updated automatically, do not edit
 external:
@@ -16,7 +18,8 @@ external:
   last_updated: '2026-10-12T17:23:46+00:00'
   license: MIT
   languages: []
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 

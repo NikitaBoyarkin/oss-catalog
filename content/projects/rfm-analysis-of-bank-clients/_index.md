@@ -3,8 +3,12 @@ title: rfm-analysis-of-bank-clients
 description: Segment bank clients by transaction behavior using Recency, Frequency,
   Monetary scoring
 github: NikitaBoyarkin/rfm-analysis-of-bank-clients
-topics: []
-tags: []
+topics:
+- Cohorts and Retention
+- Product Metrics
+tags:
+- rfm
+- segmentation
 languages:
 - Jupyter Notebook
 
@@ -21,7 +25,8 @@ external:
   license: MIT
   languages:
   - Jupyter Notebook
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Segment bank clients by transaction behavior using Recency, Frequency, Monetary scoring

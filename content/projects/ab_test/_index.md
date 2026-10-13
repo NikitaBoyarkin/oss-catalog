@@ -2,8 +2,11 @@
 title: ab_test
 description: A/B Testing Methodology Toolkit
 github: NikitaBoyarkin/ab_test
-topics: []
-tags: []
+topics:
+- Experimentation
+tags:
+- experimentation
+- methodology
 languages:
 - Python
 
@@ -19,7 +22,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 A/B Testing Methodology Toolkit

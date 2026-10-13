@@ -3,8 +3,12 @@ title: case-unit-economics
 description: Travelers lose €0.45 per €100 FX transaction; break-even needs FX cost
   cut from 1.00% to 0.55%, otherwise the loss grows with volume.
 github: NikitaBoyarkin/case-unit-economics
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- unit-economics
+- ltv
+- cac
 languages:
 - Python
 
@@ -21,7 +25,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Travelers lose €0.45 per €100 FX transaction; break-even needs FX cost cut from 1.00% to 0.55%, otherwise the loss grows with volume.

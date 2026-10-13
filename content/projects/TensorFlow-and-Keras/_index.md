@@ -3,7 +3,9 @@ title: TensorFlow-and-Keras
 description: ''
 github: NikitaBoyarkin/TensorFlow-and-Keras
 topics: []
-tags: []
+tags:
+- deep-learning
+- tensorflow
 languages:
 - Jupyter Notebook
 
@@ -19,7 +21,8 @@ external:
   license: MIT
   languages:
   - Jupyter Notebook
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 

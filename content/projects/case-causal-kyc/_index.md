@@ -3,8 +3,12 @@ title: case-causal-kyc
 description: A DiD test shows the KYC fix causally lifted M3 retention by +9.09pp
   (95% CI [+6.21, +11.96]) — flat pre-trends, placebo ≈ 0, max |SMD| 0.157 < 0.2.
 github: NikitaBoyarkin/case-causal-kyc
-topics: []
-tags: []
+topics:
+- Causal Inference
+- Cohorts and Retention
+tags:
+- difference-in-differences
+- retention
 languages:
 - Python
 
@@ -21,7 +25,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 A DiD test shows the KYC fix causally lifted M3 retention by +9.09pp (95% CI [+6.21, +11.96]) — flat pre-trends, placebo ≈ 0, max |SMD| 0.157 < 0.2.

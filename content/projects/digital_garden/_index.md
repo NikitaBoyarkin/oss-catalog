@@ -3,7 +3,9 @@ title: digital_garden
 description: EQ in IT
 github: NikitaBoyarkin/digital_garden
 topics: []
-tags: []
+tags:
+- knowledge-base
+- obsidian
 languages:
 - TypeScript
 
@@ -19,7 +21,9 @@ external:
   license: MIT
   languages:
   - TypeScript
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
+  - dependabot[bot]
 ---
 
 EQ in IT

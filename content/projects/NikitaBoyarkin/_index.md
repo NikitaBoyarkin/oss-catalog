@@ -3,7 +3,8 @@ title: NikitaBoyarkin
 description: ''
 github: NikitaBoyarkin/NikitaBoyarkin
 topics: []
-tags: []
+tags:
+- profile
 languages:
 - Python
 
@@ -19,7 +20,9 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
+  - github-actions[bot]
 ---
 
 

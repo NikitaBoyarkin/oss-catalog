@@ -1,5 +1,6 @@
 #!/usr/bin/env -S uv run
 # /// script
+# requires-python = ">=3.11"
 # dependencies = ["pyyaml>=6.0", "rich>=13.0.0"]
 # ///
 """Validate note frontmatter and placement.

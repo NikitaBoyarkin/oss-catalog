@@ -3,8 +3,12 @@ title: case-clv
 description: 'Three lifetime-value methods: historical, retention-curve and Gamma-Gamma.
   The order Power > Growth > Casual > Dormant is robust across all methods.'
 github: NikitaBoyarkin/case-clv
-topics: []
-tags: []
+topics:
+- Product Metrics
+- Cohorts and Retention
+tags:
+- ltv
+- gamma-gamma
 languages:
 - Python
 
@@ -21,7 +25,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Three lifetime-value methods: historical, retention-curve and Gamma-Gamma. The order Power > Growth > Casual > Dormant is robust across all methods.

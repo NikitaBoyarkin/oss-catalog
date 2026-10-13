@@ -3,8 +3,12 @@ title: case-assisted-cac
 description: 'Does the 45+ trust track pay off: 45+ LTV/CAC = 0.66 against a ≥3 gate;
   assisted CAC €120 is ~3× referral and doesn''t pay back (50-month payback).'
 github: NikitaBoyarkin/case-assisted-cac
-topics: []
-tags: []
+topics:
+- Product Metrics
+tags:
+- unit-economics
+- cac
+- ltv
 languages:
 - Python
 
@@ -21,7 +25,8 @@ external:
   license: MIT
   languages:
   - Python
-  contributors: []
+  contributors:
+  - NikitaBoyarkin
 ---
 
 Does the 45+ trust track pay off: 45+ LTV/CAC = 0.66 against a ≥3 gate; assisted CAC €120 is ~3× referral and doesn't pay back (50-month payback).
