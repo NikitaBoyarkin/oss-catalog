@@ -1,4 +1,4 @@
-baseURL = 'https://example.com/oss-catalog/'
+baseURL = 'https://nikitaboarkin.github.io/oss-catalog/'
 # `languageCode` was deprecated in Hugo 0.158 in favour of `locale`.
 locale = 'en-us'
 defaultContentLanguage = 'en'
