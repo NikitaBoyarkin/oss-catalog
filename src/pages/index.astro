@@ -1,0 +1,94 @@
+---
+import Base from '../layouts/Base.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import NoteCard from '../components/NoteCard.astro';
+import { getNotes, getProjects, starsOf, termBuckets } from '../lib/collections';
+import { withBase } from '../lib/site';
+import { formatNumber, pluralize } from '../lib/format';
+
+const projects = await getProjects();
+const notes = await getNotes();
+const topics = termBuckets(projects, 'topics');
+const languages = termBuckets(projects, 'languages');
+const totalStars = projects.reduce((sum, project) => sum + starsOf(project), 0);
+
+const featured = projects.slice(0, 9);
+const latestNotes = notes.slice(0, 3);
+---
+
+<Base active="home">
+  <section class="hero">
+    <h1>Analytics Project Catalog</h1>
+    <p>
+      One page per open-source repository, with stars, releases, contributors and licence synced
+      from the GitHub API — cross-linked by topic, tag and language.
+    </p>
+  </section>
+
+  <div class="stats">
+    <div class="stat">
+      <b>{formatNumber(projects.length)}</b>
+      <span>projects</span>
+    </div>
+    <div class="stat">
+      <b>{formatNumber(topics.length)}</b>
+      <span>topics</span>
+    </div>
+    <div class="stat">
+      <b>{formatNumber(languages.length)}</b>
+      <span>languages</span>
+    </div>
+    <div class="stat">
+      <b>{formatNumber(totalStars)}</b>
+      <span>stars</span>
+    </div>
+    <div class="stat">
+      <b>{formatNumber(notes.length)}</b>
+      <span>notes</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="row" style="justify-content: space-between">
+      <h2 class="section-heading">Projects</h2>
+      <a href={withBase('projects/')}>All {pluralize(projects.length, 'project')} →</a>
+    </div>
+    <hr class="rule" />
+    <div class="project-grid">
+      {featured.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </section>
+
+  <section style="margin-top: var(--space-16)">
+    <h2 class="section-heading">Browse by topic</h2>
+    <hr class="rule" />
+    <ul class="chip-list">
+      {
+        topics.map((topic) => (
+          <li>
+            <a class="chip" href={withBase(`topics/${topic.slug}/`)}>
+              {topic.term} · {topic.count}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  {
+    latestNotes.length > 0 && (
+      <section style="margin-top: var(--space-16)">
+        <div class="row" style="justify-content: space-between">
+          <h2 class="section-heading">Notes</h2>
+          <a href={withBase('notes/')}>All notes →</a>
+        </div>
+        <hr class="rule" />
+        <div class="blog-list">
+          {latestNotes.map((note) => (
+            <NoteCard note={note} />
+          ))}
+        </div>
+      </section>
+    )
+  }
+</Base>

@@ -1,9 +1,0 @@
-{{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ with .Content }}<div class="hero">{{ . }}</div>{{ end }}
-<ul class="terms">
-  {{ range .Pages }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }} ({{ len .Pages }})</a></li>
-  {{ end }}
-</ul>
-{{ end }}

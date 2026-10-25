@@ -1,12 +1,29 @@
 {
   "name": "oss-catalog",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "description": "Data-driven open-source project catalog (Hugo).",
+  "type": "module",
+  "description": "Data-driven catalog of open-source analytics projects (Astro).",
   "scripts": {
-    "build-search": "pagefind --site public"
+    "dev": "astro dev",
+    "build": "astro build && pagefind --site dist",
+    "preview": "astro preview",
+    "check": "astro check",
+    "sync": "astro sync",
+    "update-repos": "uv run scripts/update-github-repos.py",
+    "update-frontmatter": "uv run scripts/update-project-frontmatter.py",
+    "new-project": "uv run scripts/create-new-project.py",
+    "set-taxonomy": "uv run scripts/set-project-taxonomy.py",
+    "validate": "uv run scripts/validate-notes.py"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.2.9"
   },
   "devDependencies": {
-    "pagefind": "^1.4.0"
+    "@astrojs/check": "^0.9.10",
+    "pagefind": "^1.4.0",
+    "typescript": "^5.9.3"
   }
 }

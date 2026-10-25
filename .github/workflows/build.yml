@@ -21,15 +21,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
-        with:
-          # Full history so hugo's enableGitInfo can derive real Lastmod dates.
-          fetch-depth: 0
 
-      - name: Setup Hugo (extended)
-        uses: peaceiris/actions-hugo@v3
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          hugo-version: "0.167.0"
-          extended: true
+          bun-version: "1.4.2"
 
       - name: Setup uv
         # Exact tag: this action publishes floating majors only up to v7.
@@ -42,26 +38,19 @@ jobs:
       - name: Validate notes
         run: uv run scripts/validate-notes.py --strict
 
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      # Type gate: `astro check` fails the job on a content-schema or prop
+      # mismatch, which is the Astro replacement for the old Hugo WARN grep.
+      - name: Type-check
+        run: bunx astro check
+
       - name: Build site
-        run: |
-          set -o pipefail
-          hugo --logLevel info 2>&1 | tee hugo-build.log
-
-      # A warning-producing build is never published.
-      - name: Assert no Hugo warnings
-        run: |
-          if grep -iE "\bWARN\b|\bERROR\b" hugo-build.log; then
-            echo "::error::Hugo emitted warnings/errors"
-            exit 1
-          fi
-
-      - name: Setup Node
-        uses: actions/setup-node@v7
-        with:
-          node-version: "22"
+        run: bunx astro build
 
       - name: Build search index
-        run: npx --yes pagefind@1 --site public
+        run: bunx pagefind --site dist
 
       - name: Configure Pages
         uses: actions/configure-pages@v6
@@ -69,7 +58,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: public
+          path: dist
 
   deploy:
     needs: build

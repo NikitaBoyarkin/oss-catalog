@@ -1,0 +1,20 @@
+---
+import { withBase } from '../lib/site';
+import { slugOf, type Note } from '../lib/collections';
+import { formatDate } from '../lib/format';
+
+interface Props {
+  note: Note;
+}
+
+const { note } = Astro.props;
+const slug = slugOf(note.id);
+const tag = note.data.topics[0] ?? note.data.tags[0];
+---
+
+<article class="blog-card reveal">
+  {tag && <span class="blog-card-tag">{tag}</span>}
+  <a class="blog-card-title" href={withBase(`notes/${slug}/`)}>{note.data.title}</a>
+  <div class="blog-card-meta">{formatDate(note.data.date)}</div>
+  {note.data.description && <div class="blog-card-excerpt">{note.data.description}</div>}
+</article>

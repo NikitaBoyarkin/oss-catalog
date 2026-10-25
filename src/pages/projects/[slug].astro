@@ -1,0 +1,142 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import {
+  getProjects,
+  slugOf,
+  projectSummary,
+  githubUrl,
+  languagesOf,
+  type Project,
+} from '../../lib/collections';
+import { withBase } from '../../lib/site';
+import { formatDate, formatNumber, termSlug } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const projects = await getProjects();
+  return projects.map((project) => ({
+    params: { slug: slugOf(project.id) },
+    props: { project },
+  }));
+}
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const summary = projectSummary(project);
+const external = project.data.external;
+
+const stats: { label: string; value: string }[] = [];
+if (external) {
+  if (external.stars > 0) stats.push({ label: 'Stars', value: formatNumber(external.stars) });
+  if (external.forks > 0) stats.push({ label: 'Forks', value: formatNumber(external.forks) });
+  if (external.releases > 0) {
+    stats.push({ label: 'Releases', value: formatNumber(external.releases) });
+  }
+  if (external.contributors.length > 0) {
+    stats.push({
+      label: 'Contributors',
+      value: formatNumber(external.contributors.length),
+    });
+  }
+  if (external.license) stats.push({ label: 'Licence', value: external.license });
+  const updated = formatDate(external.last_updated);
+  if (updated) stats.push({ label: 'Last updated', value: updated });
+}
+
+const languages = languagesOf(project);
+const hasBody = (project.body ?? '').trim().length > 0;
+const { Content } = hasBody ? await render(project) : { Content: null };
+---
+
+<Base title={project.data.title} description={summary} active="projects">
+  <div class="page-head">
+    <h1>{project.data.title}</h1>
+    {summary && <p>{summary}</p>}
+
+    {
+      project.data.topics.length > 0 && (
+        <ul class="chip-list" aria-label="Topics">
+          {project.data.topics.map((topic) => (
+            <li>
+              <a class="chip" href={withBase(`topics/${termSlug(topic)}/`)}>
+                {topic}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    {
+      project.data.tags.length > 0 && (
+        <ul class="chip-list" aria-label="Tags">
+          {project.data.tags.map((tag) => (
+            <li>
+              <a class="chip" href={withBase(`tags/${termSlug(tag)}/`)}>
+                #{tag}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </div>
+
+  {
+    stats.length > 0 && (
+      <div class="stats">
+        {stats.map((stat) => (
+          <div class="stat">
+            <b>{stat.value}</b>
+            <span>{stat.label}</span>
+          </div>
+        ))}
+      </div>
+    )
+  }
+
+  {
+    languages.length > 0 && (
+      <p class="language-line">
+        Written in{' '}
+        {languages.map((language, index) => (
+          <>
+            {index > 0 && ', '}
+            <a href={withBase(`languages/${termSlug(language)}/`)}>{language}</a>
+          </>
+        ))}
+      </p>
+    )
+  }
+
+  {
+    hasBody && Content && (
+      <div class="prose">
+        <Content />
+      </div>
+    )
+  }
+
+  <div class="row action-row">
+    <a class="button" href={githubUrl(project)} target="_blank" rel="noopener noreferrer">
+      View on GitHub ↗
+    </a>
+    <a class="button button-secondary" href={withBase('projects/')}>
+      ← All projects
+    </a>
+  </div>
+</Base>
+
+<style>
+  .language-line {
+    margin: var(--space-4) 0;
+    color: var(--text-muted);
+  }
+
+  .action-row {
+    margin-top: var(--space-10);
+  }
+</style>

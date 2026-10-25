@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/site';
+---
+
+<Base title="Not found">
+  <section class="hero">
+    <h1>404</h1>
+    <p>This page is not in the catalog.</p>
+  </section>
+  <a class="button" href={withBase('/')}>Back to the catalog</a>
+</Base>

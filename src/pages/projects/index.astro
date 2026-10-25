@@ -1,0 +1,52 @@
+---
+import Base from '../../layouts/Base.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { getProjects, termBuckets } from '../../lib/collections';
+import { withBase } from '../../lib/site';
+import { pluralize } from '../../lib/format';
+
+const projects = await getProjects();
+const topics = termBuckets(projects, 'topics');
+---
+
+<Base title="Projects" active="projects">
+  <div class="page-head">
+    <h1>Projects</h1>
+    <p>
+      {pluralize(projects.length, 'project')} across {pluralize(topics.length, 'topic')}, sorted
+      alphabetically. Every page carries stars, releases, contributors and licence synced from the
+      GitHub API.
+    </p>
+  </div>
+
+  <ul class="chip-list topic-filter" aria-label="Filter by topic">
+    <li>
+      <a class="chip is-active" href={withBase('projects/')} aria-current="page">All</a>
+    </li>
+    {
+      topics.map((topic) => (
+        <li>
+          <a class="chip" href={withBase(`topics/${topic.slug}/`)}>
+            {topic.term} · {topic.count}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <div class="project-grid">
+    {projects.map((project) => <ProjectCard project={project} />)}
+  </div>
+</Base>
+
+<style>
+  .topic-filter {
+    margin-bottom: var(--space-8);
+  }
+
+  .chip.is-active {
+    background: var(--text-accent);
+    border-color: var(--text-accent);
+    color: var(--accent-ink);
+  }
+</style>
