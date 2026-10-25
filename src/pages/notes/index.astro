@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import NoteCard from '../../components/NoteCard.astro';
+import { getNotes } from '../../lib/collections';
+import { pluralize } from '../../lib/format';
+
+const notes = await getNotes();
+---
+
+<Base title="Notes" active="notes">
+  <section class="page-head">
+    <h1>Notes</h1>
+    <p>{pluralize(notes.length, 'note')} — short write-ups on analytics method, from experiment readouts to segmentation.</p>
+  </section>
+
+  <hr class="rule" />
+
+  {
+    notes.length > 0 ? (
+      <div class="blog-list">
+        {notes.map((note) => (
+          <NoteCard note={note} />
+        ))}
+      </div>
+    ) : (
+      <p class="muted">No notes yet.</p>
+    )
+  }
+</Base>

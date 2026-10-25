@@ -1,14 +1,11 @@
-# Hugo build output
-public/
-resources/_gen/
-.hugo_build.lock
+# Astro build output
+dist/
+.astro/
 
 # Node
 node_modules/
 .yarn/
-
-# Pagefind
-public/pagefind/
+bun.lockb
 
 # Python
 .venv/
@@ -17,10 +14,6 @@ __pycache__/
 
 # Sync cache (regenerable from the GitHub API)
 data/.cache/
-
-# Quarto
-.quarto/
-_freeze/
 
 # Secrets
 .env

@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getProjects, termBuckets } from '../../lib/collections';
+import { withBase } from '../../lib/site';
+import { pluralize } from '../../lib/format';
+
+const projects = await getProjects();
+const buckets = termBuckets(projects, 'tags');
+---
+
+<Base title="Tags" description="Browse analytics projects by tag." active="tags">
+  <div class="page-head">
+    <h1>Tags</h1>
+    <p>{pluralize(buckets.length, 'distinct tag')} across {pluralize(projects.length, 'project')}.</p>
+  </div>
+
+  {
+    buckets.length === 0 ? (
+      <p class="muted">No tags yet.</p>
+    ) : (
+      <ul class="term-list">
+        {buckets.map((bucket) => (
+          <li class="term-row">
+            <a href={withBase(`tags/${bucket.slug}/`)}>{bucket.term}</a>
+            <span class="term-count">{bucket.count}</span>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</Base>

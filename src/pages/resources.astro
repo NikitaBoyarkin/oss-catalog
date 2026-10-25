@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, withBase } from '../lib/site';
+
+const internal = [
+  { href: withBase('projects/'), label: 'Projects', note: 'One page per repository, synced from the GitHub API.' },
+  { href: withBase('topics/'), label: 'Topics', note: 'Browse the catalog by subject — experimentation, product analytics, and more.' },
+  { href: withBase('notes/'), label: 'Notes', note: 'Short write-ups on analytics method.' },
+];
+
+const external = [
+  { href: SITE.repo, label: 'Source repository', note: 'The catalog itself: content, scripts and the GitHub sync.' },
+  { href: SITE.github, label: 'GitHub profile', note: 'Other projects by the same author.' },
+];
+---
+
+<Base title="Resources" active="notes">
+  <section class="page-head">
+    <h1>Resources</h1>
+    <p>Where to go next: the catalog's own sections, and its source.</p>
+  </section>
+
+  <hr class="rule" />
+
+  <div class="stack">
+    {internal.map((item) => <a href={item.href}>{item.label} — {item.note}</a>)}
+    {
+      external.map((item) => (
+        <a href={item.href} rel="noopener noreferrer" target="_blank">
+          {item.label} — {item.note}
+        </a>
+      ))
+    }
+  </div>
+</Base>

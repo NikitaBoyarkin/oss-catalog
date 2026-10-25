@@ -1,0 +1,35 @@
+---
+import type { InferGetStaticPropsType } from 'astro';
+import Base from '../../layouts/Base.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { entriesWithTerm, getProjects, termBuckets } from '../../lib/collections';
+import { withBase } from '../../lib/site';
+import { pluralize } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const projects = await getProjects();
+  return termBuckets(projects, 'languages').map((bucket) => ({
+    params: { language: bucket.slug },
+    props: { bucket, projects: entriesWithTerm(projects, 'languages', bucket.slug) },
+  }));
+}
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { bucket, projects } = Astro.props as Props;
+---
+
+<Base title={bucket.term} description={`Projects written in ${bucket.term}.`} active="languages">
+  <div class="page-head">
+    <h1>{bucket.term}</h1>
+    <p>{pluralize(bucket.count, 'project')}</p>
+  </div>
+
+  <div class="project-grid">
+    {projects.map((project) => <ProjectCard project={project} />)}
+  </div>
+
+  <p style="margin-top: var(--space-8)">
+    <a class="button button-secondary" href={withBase('languages/')}>← All languages</a>
+  </p>
+</Base>

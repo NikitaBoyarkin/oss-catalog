@@ -1,0 +1,182 @@
+---
+import '../styles/global.css';
+import { SITE, NAV, withBase, type NavKey } from '../lib/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  active?: NavKey;
+}
+
+const { title, description = SITE.description, active } = Astro.props;
+const pageTitle = title ? `${title} — ${SITE.title}` : SITE.title;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const websiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.title,
+  description: SITE.description,
+  url: new URL(withBase('/'), Astro.site).href,
+  author: { '@type': 'Person', name: SITE.author, url: SITE.github },
+};
+---
+
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href={withBase('favicon.svg')} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={`${SITE.title} — Notes`}
+      href={withBase('rss.xml')}
+    />
+
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      href={withBase('fonts/inter-latin.woff2')}
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+      href={withBase('fonts/cormorant-latin.woff2')}
+    />
+
+    <meta id="theme-color" name="theme-color" content="#1400c3" />
+    <meta property="og:site_name" content={SITE.title} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(websiteLd).replace(/</g, '\\u003c')}
+    />
+
+    <script is:inline>
+      (function () {
+        var order = ['dark', 'light', 'cyberpunk'];
+        var colors = { dark: '#1400c3', light: '#f4efca', cyberpunk: '#171717' };
+        var saved = null;
+        try {
+          saved = localStorage.getItem('theme');
+        } catch (e) {}
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = order.indexOf(saved) >= 0 ? saved : prefersDark ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+        var meta = document.getElementById('theme-color');
+        if (meta) meta.setAttribute('content', colors[theme]);
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href={withBase('/')}>{SITE.title}</a>
+        <nav class="site-nav" aria-label="Primary">
+          {
+            NAV.map((item) => (
+              <a
+                class="nav-link"
+                href={withBase(item.href)}
+                aria-current={active === item.key ? 'page' : undefined}
+              >
+                {item.label}
+              </a>
+            ))
+          }
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <span>
+        {SITE.title} — metadata synced from the GitHub API. Built with Astro.
+      </span>
+      <span>
+        <a href={SITE.github} rel="noopener noreferrer" target="_blank">GitHub</a>
+        <span aria-hidden="true"> · </span>
+        <a href={withBase('llms.txt')}>llms.txt</a>
+        <span aria-hidden="true"> · </span>
+        <a href={withBase('rss.xml')}>RSS</a>
+      </span>
+    </footer>
+
+    <script is:inline>
+      (function () {
+        var order = ['dark', 'light', 'cyberpunk'];
+        var colors = { dark: '#1400c3', light: '#f4efca', cyberpunk: '#171717' };
+        var root = document.documentElement;
+        var button = document.getElementById('theme-toggle');
+        if (button) {
+          button.addEventListener('click', function () {
+            var current = root.getAttribute('data-theme') || 'dark';
+            var next = order[(order.indexOf(current) + 1) % order.length];
+            root.setAttribute('data-theme', next);
+            try {
+              localStorage.setItem('theme', next);
+            } catch (e) {}
+            var meta = document.getElementById('theme-color');
+            if (meta) meta.setAttribute('content', colors[next]);
+          });
+        }
+        if ('IntersectionObserver' in window) {
+          var observer = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { rootMargin: '0px 0px -10% 0px' },
+          );
+          document.querySelectorAll('.reveal').forEach(function (node) {
+            observer.observe(node);
+          });
+        } else {
+          document.querySelectorAll('.reveal').forEach(function (node) {
+            node.classList.add('visible');
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

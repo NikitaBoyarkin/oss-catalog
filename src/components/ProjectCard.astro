@@ -1,0 +1,47 @@
+---
+import { withBase } from '../lib/site';
+import { slugOf, githubUrl, languagesOf, projectSummary, starsOf, type Project } from '../lib/collections';
+import { formatNumber } from '../lib/format';
+
+interface Props {
+  project: Project;
+  topics?: boolean;
+}
+
+const { project, topics = true } = Astro.props;
+const slug = slugOf(project.id);
+const summary = projectSummary(project);
+const languages = languagesOf(project);
+const stars = starsOf(project);
+const chips = topics ? project.data.topics.slice(0, 2) : [];
+---
+
+<article class="project reveal">
+  <h3>
+    <a href={withBase(`projects/${slug}/`)}>{project.data.title}</a>
+  </h3>
+
+  {summary && <p>{summary}</p>}
+
+  {
+    chips.length > 0 && (
+      <ul class="chip-list">
+        {chips.map((topic) => (
+          <li>
+            <span class="chip">{topic}</span>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  <div class="project-meta">
+    {
+      languages.length > 0 && (
+        <span class="project-lang">{languages[0]}</span>
+      )
+    }
+    {stars > 0 && <span>★ {formatNumber(stars)}</span>}
+    <a href={githubUrl(project)} rel="noopener noreferrer" target="_blank">GitHub ↗</a>
+  </div>
+</article>

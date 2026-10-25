@@ -1,0 +1,88 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { getNotes, slugOf, type Note } from '../../lib/collections';
+import { formatDate, termSlug } from '../../lib/format';
+import { withBase } from '../../lib/site';
+
+interface Props {
+  note: Note;
+  older?: Note;
+  newer?: Note;
+}
+
+export const getStaticPaths = (async () => {
+  const notes = await getNotes();
+  return notes.map((note, index) => ({
+    params: { slug: slugOf(note.id) },
+    props: {
+      note,
+      newer: index > 0 ? notes[index - 1] : undefined,
+      older: index < notes.length - 1 ? notes[index + 1] : undefined,
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { note, newer, older } = Astro.props;
+const { Content } = await render(note);
+const topics = note.data.topics;
+const tags = note.data.tags;
+---
+
+<Base title={note.data.title} description={note.data.description} active="notes">
+  <article>
+    <header class="page-head">
+      <h1>{note.data.title}</h1>
+      <div class="row muted">
+        <time datetime={note.data.date.toISOString()}>{formatDate(note.data.date)}</time>
+        {
+          topics.map((topic) => (
+            <a class="chip" href={withBase(`topics/${termSlug(topic)}/`)}>
+              {topic}
+            </a>
+          ))
+        }
+        {
+          tags.map((tag) => (
+            <a class="chip" href={withBase(`tags/${termSlug(tag)}/`)}>
+              {tag}
+            </a>
+          ))
+        }
+      </div>
+    </header>
+
+    <hr class="rule" />
+
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+
+  {
+    (older || newer) && (
+      <nav class="note-nav row" aria-label="More notes">
+        {older && (
+          <a class="button button-secondary" href={withBase(`notes/${slugOf(older.id)}/`)}>
+            ← {older.data.title}
+          </a>
+        )}
+        {newer && (
+          <a class="button button-secondary" href={withBase(`notes/${slugOf(newer.id)}/`)}>
+            {newer.data.title} →
+          </a>
+        )}
+      </nav>
+    )
+  }
+</Base>
+
+<style>
+  .note-nav {
+    margin-top: var(--space-16, 4rem);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-3, 0.75rem);
+  }
+</style>
