@@ -92,7 +92,7 @@ def main() -> int:
     warnings: list[str] = []
 
     for path in targets:
-        rel = path.relative_to(REPO_ROOT) if path.is_absolute() is False else path
+        rel = path.relative_to(REPO_ROOT) if path.is_absolute() else path
         text = path.read_text(encoding="utf-8")
         fm, body = split_frontmatter(text)
         if fm is None:
