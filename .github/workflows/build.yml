@@ -41,8 +41,11 @@ jobs:
           # cache would never invalidate. Keep CI honest and skip it.
           enable-cache: false
 
-      - name: Validate notes
+      - name: Validate notes and project pages
         run: uv run scripts/validate-notes.py --strict
+
+      - name: Test content scripts
+        run: uv run tests/test_scripts.py
 
       - name: Install dependencies
         run: bun install --frozen-lockfile

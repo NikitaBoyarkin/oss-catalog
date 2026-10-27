@@ -66,6 +66,58 @@ def load_records() -> dict[str, dict]:
     return {r["repo"]: r for r in data.get("repos", [])}
 
 
+def index_by_name(by_repo: dict[str, dict]) -> dict[str, dict]:
+    return {r["name"]: r for r in by_repo.values()}
+
+
+def find_record(
+    github: str | None,
+    dir_name: str,
+    by_repo: dict[str, dict],
+    by_name: dict[str, dict],
+) -> dict | None:
+    """Match a page to its TOML record: `owner/name`, then bare name, then the directory name."""
+    return by_repo.get(github) or by_name.get(github) or by_name.get(dir_name)
+
+
+def build_external(record: dict, exclude: dict | None = None) -> dict:
+    """The machine-owned `external:` block, minus anything the page asks to drop."""
+    external = {
+        "description": record.get("description", ""),
+        "stars": record.get("stars"),
+        "forks": record.get("forks"),
+        "releases": record.get("releases"),
+        "latest_release": record.get("latest_release"),
+        "first_commit": record.get("first_commit"),
+        "last_updated": record.get("last_updated"),
+        "license": record.get("license"),
+        "languages": [record["language"]] if record.get("language") else [],
+        "contributors": record.get("contributors", []),
+    }
+
+    # Honour per-page exclude lists.
+    for key, drop in (exclude or {}).items():
+        if key in external and isinstance(external[key], list):
+            external[key] = [v for v in external[key] if v not in set(drop)]
+    return external
+
+
+def merge_frontmatter(fm: dict, external: dict) -> dict:
+    """Editorial fields, with derived `languages` filled in only when the page omits them."""
+    head = {k: v for k, v in fm.items() if k != "external"}
+    if "languages" not in head and external["languages"]:
+        head["languages"] = external["languages"]
+    return head
+
+
+def render_page(head: dict, external: dict, body: str) -> str:
+    """Full file text for one project page."""
+    return (
+        f"---\n{dump_fm(head)}\n{AUTO_COMMENT}"
+        f"{dump_fm({'external': external})}---\n{body}"
+    )
+
+
 def main() -> int:
     if not DATA_FILE.exists():
         console.print(
@@ -77,7 +129,7 @@ def main() -> int:
         return 0
 
     by_repo = load_records()
-    by_name = {r["name"]: r for r in by_repo.values()}
+    by_name = index_by_name(by_repo)
     updated = 0
 
     for page in sorted(PROJECTS_DIR.glob("*/index.md")):
@@ -89,41 +141,17 @@ def main() -> int:
             continue
         fm, body = split
 
-        record = (
-            by_repo.get(fm.get("github"))
-            or by_name.get(fm.get("github"))
-            or by_name.get(page.parent.name)
-        )
+        record = find_record(fm.get("github"), page.parent.name, by_repo, by_name)
         if record is None:
             console.print(
                 f"[yellow]skip (no GitHub record):[/] {page.relative_to(REPO_ROOT)}"
             )
             continue
 
-        external = {
-            "description": record.get("description", ""),
-            "stars": record.get("stars"),
-            "forks": record.get("forks"),
-            "releases": record.get("releases"),
-            "latest_release": record.get("latest_release"),
-            "first_commit": record.get("first_commit"),
-            "last_updated": record.get("last_updated"),
-            "license": record.get("license"),
-            "languages": [record["language"]] if record.get("language") else [],
-            "contributors": record.get("contributors", []),
-        }
+        external = build_external(record, fm.get("exclude") or {})
+        head = merge_frontmatter(fm, external)
 
-        # Honour per-page exclude lists.
-        exclude = fm.get("exclude") or {}
-        for key, drop in exclude.items():
-            if key in external and isinstance(external[key], list):
-                external[key] = [v for v in external[key] if v not in set(drop)]
-
-        head = {k: v for k, v in fm.items() if k != "external"}
-        if "languages" not in head and external["languages"]:
-            head["languages"] = external["languages"]
-
-        new_text = f"---\n{dump_fm(head)}\n{AUTO_COMMENT}{dump_fm({'external': external})}---\n{body}"
+        new_text = render_page(head, external, body)
         if new_text != page.read_text(encoding="utf-8"):
             page.write_text(new_text, encoding="utf-8")
             updated += 1
