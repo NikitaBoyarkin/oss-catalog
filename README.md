@@ -90,7 +90,7 @@ A project page needs `title`, `description`, `github`, and (optionally) `topics`
 Pushing to `main` triggers `.github/workflows/build.yml`: it validates notes, runs
 `astro check` (the type gate that replaced the old Hugo warning grep), builds to `dist/`, indexes
 it with Pagefind, and deploys to GitHub Pages at
-**https://nikitaboarkin.github.io/oss-catalog/**. Pages must be set to *GitHub Actions* as the
+**https://nikitaboyarkin.github.io/oss-catalog/**. Pages must be set to *GitHub Actions* as the
 source (Settings → Pages), done once via the API:
 
 ```sh
