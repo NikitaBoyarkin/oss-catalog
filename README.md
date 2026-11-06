@@ -24,6 +24,32 @@ from [NikitaBoyarkin.github.io](https://github.com/NikitaBoyarkin/NikitaBoyarkin
 the same tokens, self-hosted Inter + Cormorant, and the same card/button geometry — there is no
 Tailwind and no third-party theme.
 
+**Public link:** [живой каталог](https://nikitaboyarkin.github.io/oss-catalog/) · [кейс](https://nikitaboyarkin.github.io/projects/oss-catalog/) · [исходники](https://github.com/NikitaBoyarkin/oss-catalog)
+
+## Decision
+
+The catalog is a reproducible showcase of one source: repository metadata from the GitHub REST API,
+mirrored into page frontmatter by two scripts and rebuilt by CI on every push to `main`. What it
+proves is that the read path — sync → `external:` → static page — is repeatable and gated
+(`astro check` plus the note validator); it does not prove that any listed repository is worth
+adopting.
+
+Its figures are a 24-hour snapshot of stars, releases, contributors, language and licence for 47
+public repos: they describe attention on one platform at one moment, not quality, adoption or
+growth. There is no usage data behind them, nothing is synthesised, and no editorial judgement is
+encoded in a number.
+
+So read it as a working template for a single-source catalog — one page per repository, visible
+provenance, figures that only the sync script is allowed to write — rather than as an evaluation of
+the projects it lists.
+
+## Dataset
+
+There is no analysis dataset here: the "data" is repository metadata — stars, releases,
+contributors, language and licence for 47 public repos — pulled from the GitHub REST API by
+`scripts/update-github-repos.py` (24 h cache) and committed as `data/github-repos.toml`.
+`bun run update-repos` refreshes it; nothing is synthesised and no user-level data exists.
+
 ## The one rule
 
 `data/github-repos.toml` is the **source of truth** for machine-owned data. A sync script writes
@@ -70,7 +96,7 @@ bun run validate               # validate note frontmatter + placement
 
 ## Prerequisites
 
-Node 20+ or Bun 1.4+, and `uv` (Python) for the sync/validate scripts. The site itself needs no
+Node 22.23.4+ or Bun 1.4+, and `uv` (Python) for the sync/validate scripts. The site itself needs no
 Python: the build reads only the frontmatter that the scripts already wrote.
 
 ## Adding a page
@@ -82,8 +108,8 @@ bun run update-frontmatter      # mirrors the record into `external:`
 bun run build
 ```
 
-A project page needs `title`, `description`, `github`, and (optionally) `topics`, `tags`,
-`languages`. Missing `external` renders fine — the stats block simply omits the synced values.
+A project page needs `title` and `github`; `description`, `topics`, `tags` and `languages`
+are optional. Missing `external` renders fine — the stats block simply omits the synced values.
 
 ## Deployment
 
